@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penfolds Civils & Surfacing | Civil Engineering, Groundworks & Surfacing</title>
+<meta name="description" content="Penfolds Civils & Surfacing — civil engineering, groundworks, tarmacing and surfacing. Quality. Safety. Delivery.">
+<style>
+:root{
+  --navy:#0e1b2d; --navy2:#13243a; --cream:#f2e6c9; --red:#b71c1c;
+  --grey:#50545a; --white:#fff; --light:#f7f4ed; --max:1180px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#17202b;background:var(--white);line-height:1.6}
+h1,h2,h3,.brand,.navbrand{font-family:Georgia,'Times New Roman',serif}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+.topbar{background:var(--red);color:white;text-align:center;font-size:.85rem;padding:.45rem}
+header{position:sticky;top:0;z-index:10;background:rgba(14,27,45,.97);color:white;border-bottom:1px solid rgba(242,230,201,.2)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.navbrand{font-size:1.55rem;letter-spacing:.08em;font-weight:700}
+.navbrand small{display:block;font:700 .62rem Arial;letter-spacing:.17em;color:var(--red)}
+nav{display:flex;gap:25px;font-size:.92rem;font-weight:700}
+nav a:hover{color:var(--cream)}
+.btn{display:inline-block;padding:.9rem 1.25rem;border-radius:2px;font-weight:800;letter-spacing:.03em}
+.btn-red{background:var(--red);color:white}.btn-cream{background:var(--cream);color:var(--navy)}
+.hero{background:linear-gradient(90deg,rgba(14,27,45,.98),rgba(14,27,45,.72)),url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1800&q=85') center/cover;min-height:650px;color:white;display:flex;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.eyebrow{color:var(--cream);font-size:.8rem;letter-spacing:.22em;font-weight:800}
+.hero h1{font-size:clamp(3rem,7vw,6rem);line-height:.92;margin:.4rem 0 1rem;letter-spacing:.01em}
+.hero h1 span{color:var(--red)}
+.hero p{font-size:1.15rem;max-width:650px;color:#edf0f4}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.8rem}
+.crest{width:220px;height:220px;border:4px solid var(--cream);outline:2px solid var(--red);outline-offset:-12px;border-radius:50%;display:grid;place-items:center;margin:auto;text-align:center;background:rgba(14,27,45,.7)}
+.crest .p{font:700 6rem Georgia;color:var(--cream);line-height:.8}
+.crest .ring{font:700 .7rem Arial;letter-spacing:.2em;color:var(--cream)}
+section{padding:90px 0}.light{background:var(--light)}.navy{background:var(--navy);color:white}
+.section-head{max-width:700px;margin-bottom:42px}.section-head h2{font-size:2.7rem;line-height:1.05;margin:.25rem 0}.section-head p{color:#5e6670}
+.navy .section-head p{color:#c9d0d8}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{padding:28px;background:white;border-top:4px solid var(--red);box-shadow:0 8px 30px rgba(14,27,45,.08)}
+.card .num{font:700 2rem Georgia;color:var(--red)}
+.card h3{font-size:1.35rem;margin:.35rem 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#314258}
+.stat{padding:30px;background:var(--navy2);text-align:center}.stat strong{display:block;font:700 2.4rem Georgia;color:var(--cream)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{min-height:320px;padding:24px;display:flex;align-items:end;background:linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.05)),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80') center/cover;color:white}
+.project:nth-child(2){background-image:linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.05)),url('https://images.unsplash.com/photo-1517089535815-2e4e7c0f3b0f?auto=format&fit=crop&w=900&q=80')}
+.project:nth-child(3){background-image:linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.05)),url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80')}
+.project h3{font-size:1.6rem;margin:0}
+.before-after{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.before-after div{position:relative;overflow:hidden;background:#ddd}
+.before-after img{display:block;width:100%;height:300px;object-fit:cover}
+.before-after span{position:absolute;left:14px;bottom:14px;background:var(--red);color:#fff;padding:6px 10px;font-size:.72rem;font-weight:800;letter-spacing:.12em}
+@media(max-width:700px){.before-after{grid-template-columns:1fr}.before-after img{height:240px}}
+.quote{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.quote-box{background:var(--cream);padding:38px;border-left:6px solid var(--red)}
+.quote-box blockquote{font:italic 1.45rem Georgia;margin:0 0 20px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:45px}
+form{display:grid;gap:13px}input,textarea{width:100%;padding:15px;border:1px solid #ccd1d6;background:white;font:inherit}textarea{min-height:150px}
+footer{background:#091321;color:#dce1e7;padding:45px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer-brand{font:700 2rem Georgia;color:var(--cream)}.copyright{border-top:1px solid #29384b;margin-top:35px;padding-top:18px;font-size:.8rem;color:#8f9baa}
+.mobile{display:none}
+@media(max-width:850px){
+ nav{display:none}.mobile{display:block}.hero-grid,.quote,.contact,.footer-grid{grid-template-columns:1fr}.hero{min-height:600px}.crest{width:170px;height:170px}.crest .p{font-size:4.5rem}
+ .cards,.stats{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr}
+}
+@media(max-width:520px){section{padding:65px 0}.cards,.stats{grid-template-columns:1fr}.hero h1{font-size:3.6rem}.actions .btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<div class="topbar">QUALITY. SAFETY. DELIVERY. &nbsp; | &nbsp; CIVILS • GROUNDWORKS • TARMACING • SURFACING</div>
+<header><div class="container nav">
+  <a class="navbrand" href="#">PENFOLDS<small>CIVILS & SURFACING</small></a>
+  <nav><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#areas">Areas</a><a href="#contact">Contact</a></nav>
+  <a class="btn btn-red" href="#contact">Request a quote</a><span class="mobile">☰</span>
+</div></header>
+
+<main>
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">EST. 1990 • BUILT TO LAST</div>
+   <h1>Penfolds<br><span>Civils & Surfacing</span></h1>
+   <p>Reliable civil engineering, groundworks and surfacing delivered with a straightforward approach — quality workmanship, safe sites and projects delivered properly.</p>
+   <div class="actions"><a class="btn btn-red" href="#contact">Get a quotation</a><a class="btn btn-cream" href="#services">Our services</a></div>
+  </div>
+  <div class="crest"><div><div class="ring">CIVILS & SURFACING</div><div class="p">P</div><div class="ring">EST. 1990</div></div></div>
+ </div>
+</section>
+
+<section id="services" class="light">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow" style="color:var(--red)">WHAT WE DO</div><h2>Groundwork you can build on.</h2><p>From initial groundworks through to finished surfacing, Penfolds provides practical site solutions for commercial, industrial and private projects.</p></div>
+  <div class="cards">
+   <article class="card"><div class="num">01</div><h3>Civil Engineering</h3><p>Site preparation, drainage, infrastructure and supporting civil works delivered to a high standard.</p></article>
+   <article class="card"><div class="num">02</div><h3>Groundworks</h3><p>Excavation, foundations, reduced levels, earthworks and site preparation.</p></article>
+   <article class="card"><div class="num">03</div><h3>Tarmacing</h3><p>Durable asphalt and tarmac solutions for roads, yards, driveways and commercial sites.</p></article>
+   <article class="card"><div class="num">04</div><h3>Surfacing</h3><p>Professional finishing work designed for performance, longevity and a clean final result.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="navy"><div class="container"><div class="stats">
+ <div class="stat"><strong>30+</strong>Years of experience</div>
+ <div class="stat"><strong>4</strong>Core services</div>
+ <div class="stat"><strong>100%</strong>Site focused</div>
+ <div class="stat"><strong>1</strong>Reliable team</div>
+</div></div></section>
+
+<section id="projects">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow" style="color:var(--red)">OUR WORK</div><h2>Built for the real world.</h2><p>Use this section for your strongest completed projects, with a short result-led description for each.</p></div>
+  <div class="projects">
+   <article class="project real-photo" style="background-image:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.03)),url('project-after.jpeg')"><div><h3>Driveway & Ground Preparation</h3><p>Finished surface and landscaping preparation.</p></div></article>
+   <article class="project real-photo" style="background-image:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.03)),url('resin-driveway.jpeg')"><div><h3>Resin Surfacing</h3><p>Clean, durable surfacing for residential properties.</p></div></article>
+   <article class="project real-photo" style="background-image:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.03)),url('groundworks.jpeg')"><div><h3>Groundworks & Drainage</h3><p>Excavation and site infrastructure using tracked machinery.</p></div></article>
+  </div>
+  <div class="before-after">
+   <div><img src="project-before.jpeg" alt="Project before works"><span>BEFORE</span></div>
+   <div><img src="project-after.jpeg" alt="Project after works"><span>AFTER</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="about" class="light"><div class="container quote">
+ <div><div class="eyebrow" style="color:var(--red)">WHY PENFOLDS</div><h2>Professional work. No fuss.</h2><p>Penfolds is positioned as an experienced, dependable contractor with a practical approach to every job. The brand is deliberately built around trust, workmanship and delivery.</p><a class="btn btn-red" href="#contact">Talk to the team</a></div>
+ <div class="quote-box"><blockquote>“Quality. Safety. Delivery.”</blockquote><p>A simple promise that puts the emphasis where it belongs: doing the work properly and delivering a finished job clients can be proud of.</p></div>
+</div></section>
+
+<section class="light" id="areas">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow" style="color:var(--red)">WHERE WE WORK</div>
+  <h2>Serving the South East & London.</h2>
+  <p>Penfolds Civils & Surfacing provides civil engineering, groundworks and surfacing services across our core service areas.</p></div>
+  <div class="cards">
+   <article class="card"><div class="num">01</div><h3>East Sussex</h3><p>Groundworks, civils and surfacing across East Sussex.</p></article>
+   <article class="card"><div class="num">02</div><h3>West Sussex</h3><p>Residential, commercial and development works.</p></article>
+   <article class="card"><div class="num">03</div><h3>Kent & Surrey</h3><p>Reliable site works and surfacing across Kent and Surrey.</p></article>
+   <article class="card"><div class="num">04</div><h3>London</h3><p>Selected civil, groundwork and surfacing projects across London.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="navy"><div class="container contact">
+ <div><div class="eyebrow">START A PROJECT</div><h2 style="font:700 2.8rem Georgia;margin:.4rem 0">Let's discuss your requirements.</h2><p>Tell us what you need, where the work is and roughly when you want it completed. We'll come back to you to discuss the next step.</p>
+ <p><strong>Email:</strong> <a href="mailto:henryjohnpenfold@live.com">henryjohnpenfold@live.com</a><br><strong>Phone:</strong> <a href="tel:+447495479286">07495 479286</a></p></div>
+ <form onsubmit="event.preventDefault(); alert('Thanks — your enquiry form is ready to connect to your email or CRM.');">
+  <input required placeholder="Your name"><input type="email" required placeholder="Email address"><input placeholder="Phone number"><input placeholder="Project location"><textarea required placeholder="Tell us about the work"></textarea><button class="btn btn-red" type="submit">Send enquiry</button>
+ </form>
+</div></section>
+</main>
+<footer><div class="container"><div class="footer-grid">
+ <div><div class="footer-brand">PENFOLDS</div><p>Civils & Surfacing<br>Quality. Safety. Delivery.</p></div>
+ <div><strong>Services</strong><p>Civil engineering<br>Groundworks<br>Tarmacing<br>Surfacing</p></div>
+ <div><strong>Contact</strong><p><a href="tel:+447495479286">07495 479286</a><br><a href="mailto:henryjohnpenfold@live.com">henryjohnpenfold@live.com</a></p></div>
+</div><div class="copyright">© <span id="year"></span> Penfolds Civils & Surfacing. All rights reserved.</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
