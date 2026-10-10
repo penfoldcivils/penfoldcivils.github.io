@@ -62,8 +62,8 @@ form{display:grid;gap:13px}input,textarea{width:100%;padding:15px;border:1px sol
 footer{background:#091321;color:#dce1e7;padding:45px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer-brand{font:700 2rem Georgia;color:var(--cream)}.copyright{border-top:1px solid #29384b;margin-top:35px;padding-top:18px;font-size:.8rem;color:#8f9baa}
 .mobile{display:none}
   @media(max-width:850px){
-  header nav{display:none}
-    header nav.menu-open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0e1b2d;padding:20px;z-index:100}
+header nav{display:none}
+    header nav.menu-open{display:flex!important;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0e1b2d;padding:20px;z-index:100}
   header:focus-within nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#0e1b2d;padding:20px;z-index:100}
 }
 @media(max-width:850px){
