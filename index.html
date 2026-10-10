@@ -165,5 +165,10 @@ footer{background:#091321;color:#dce1e7;padding:45px 0 25px}.footer-grid{display
  <div><strong>Contact</strong><p><a href="tel:+447495479286">07495 479286</a><br><a href="mailto:henryjohnpenfold@live.com">henryjohnpenfold@live.com</a></p></div>
 </div><div class="copyright">© <span id="year"></span> Penfolds Civils & Surfacing. All rights reserved.</div></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script>
+document.querySelector('.mobile').addEventListener('click', function() {
+  document.querySelector('header nav').classList.toggle('menu-open');
+});
+</script>
 </body>
 </html>
