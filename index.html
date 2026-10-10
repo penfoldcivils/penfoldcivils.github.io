@@ -64,7 +64,7 @@ footer{background:#091321;color:#dce1e7;padding:45px 0 25px}.footer-grid{display
   @media(max-width:850px){
 header nav{display:none}
     header nav.menu-open{display:flex!important;flex-direction:column;position:absolute;top:78px;left:0;right:0;background:#0e1b2d;padding:20px;z-index:100}
-  
+#mobile-menu:checked ~ nav{display:flex!important}  
 }
 @media(max-width:850px){
   .mobile{display:block}.hero-grid,.quote,.contact,.footer-grid{grid-template-columns:1fr}.hero{min-height:auto}.crest{width:170px;height:170px}.crest .p{font-size:4.5rem}
@@ -80,8 +80,8 @@ header nav{display:none}
 <div class="topbar">QUALITY. SAFETY. DELIVERY. &nbsp; | &nbsp; CIVILS • GROUNDWORKS • TARMACING • SURFACING</div>
 <header><div class="container nav">
   <a class="navbrand" href="#">PENFOLDS<small>CIVILS & SURFACING</small></a>
-  <nav><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#areas">Areas</a><a href="#contact">Contact</a><a href="contractors.html">Contractors</a></nav>
-  <a class="btn btn-red" href="#contact">Request a quote</a><button type="button" class="mobile" aria-label="Open menu" onclick="document.querySelector('header nav').classList.toggle('menu-open')">☰</button>
+  <input type="checkbox" id="mobile-menu" hidden><nav><a href="#services">Services</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#areas">Areas</a><a href="#contact">Contact</a><a href="contractors.html">Contractors</a></nav>
+  <a class="btn btn-red" href="#contact">Request a quote</a><label for="mobile-menu" class="mobile">☰</label>
 </div></header>
 
 <main>
