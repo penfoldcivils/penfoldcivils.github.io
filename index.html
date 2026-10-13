@@ -159,7 +159,7 @@ href="#about">About</a><a href="#areas">Areas</a><a href="#contact">Contact</a><
 <section id="contact" class="navy"><div class="container contact">
  <div><div class="eyebrow">START A PROJECT</div><h2 style="font:700 2.8rem Georgia;margin:.4rem 0">Let's discuss your requirements.</h2><p>Tell us what you need, where the work is and roughly when you want it completed. We'll come back to you to discuss the next step.</p>
  <p><strong>Email:</strong> <a href="mailto:penfoldcivils@hotmail.com">penfoldcivils@hotmail.com</a><br><strong>Phone:</strong> <a href="tel:+447495479286">07495 479286</a></p></div>
- <form onsubmit="event.preventDefault(); alert('Thanks — your enquiry form is ready to connect to your email or CRM.');">
+ <form onsubmit="event.preventDefault(); const f=this; const subject='Website enquiry - Penfolds Civils'; const body='Name: '+f.elements[0].value+'\nEmail: '+f.elements[1].value+'\nPhone: '+f.elements[2].value+'\nProject location: '+f.elements[3].value+'\n\nProject details:\n'+f.elements[4].value; window.location.href='mailto:penfoldcivils@hotmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);">
   <input required placeholder="Your name"><input type="email" required placeholder="Email address"><input placeholder="Phone number"><input placeholder="Project location"><textarea required placeholder="Tell us about the work"></textarea><button class="btn btn-red" type="submit">Send enquiry</button>
  </form>
 </div></section>
